@@ -1,0 +1,15 @@
+{
+  "name": "nid-campus-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack campus project and resource portal for NID Bangalore.",
+  "scripts": {
+    "dev": "concurrently \"npm.cmd run dev --prefix server\" \"npm.cmd run dev --prefix client\"",
+    "install:all": "npm.cmd install --prefix server && npm.cmd install --prefix client",
+    "server": "npm.cmd run dev --prefix server",
+    "client": "npm.cmd run dev --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
