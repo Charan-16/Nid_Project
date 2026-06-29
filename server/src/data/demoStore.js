@@ -91,7 +91,7 @@ export const demoUsers = [
   { id: "u-student-3", name: "Priya Singh", email: "priya@nid.edu", passwordHash, role: "student", department: "Information Design", semester: "Semester 3" },
   { id: "u-student-4", name: "Meera Nair", email: "meera@nid.edu", passwordHash, role: "student", department: "Design for Retail Experience", semester: "Semester 2" },
   { id: "u-student-5", name: "Karthik Iyer", email: "karthik@nid.edu", passwordHash, role: "student", department: "Universal Design", semester: "Semester 4" },
-  { id: "u-faculty-1", name: "Dr. Mamata N. Rao", email: "faculty@nid.edu", passwordHash, role: "faculty", department: "Interaction Design", title: "Dean & Principal Faculty" },
+  { id: "u-faculty-1", name: "Dr. C. S. Susanth", email: "faculty@nid.edu", passwordHash, role: "faculty", department: "Administration", title: "Dean, NID Bengaluru Campus" },
   { id: "u-admin-1", name: "Campus Admin", email: "admin@nid.edu", passwordHash, role: "admin", department: "Administration", title: "Academic Office" }
 ];
 
@@ -102,7 +102,7 @@ export const demoProjects = [
 ];
 
 export const demoFaculty = [
-  { id: "f-0", name: "Dean, NID Bengaluru", title: "Campus Dean", department: "Administration", email: "deanblr@nid.edu", room: "Dean's Office", expertise: ["Campus leadership", "Academic coordination"], photoUrl: "/assets/faculty/faculty_6.png", sourceStatus: "Admin maintained", type: "Permanent" },
+  { id: "f-0", name: "Dr. C. S. Susanth", title: "Dean, NID Bengaluru Campus", department: "Administration", email: "deanblr@nid.edu", room: "Dean's Office", expertise: ["Campus leadership", "Academic coordination"], photoUrl: "/assets/faculty/faculty_6.png", sourceStatus: "Admin maintained", type: "Permanent" },
   { id: "f-1", name: "Interaction Design Faculty", title: "Faculty", department: "Interaction Design", email: "ixd.office@nid.edu", room: "Interaction Studio", expertise: ["UX research", "Service design"], photoUrl: "/assets/faculty/faculty_4.png", sourceStatus: "Admin maintained", type: "Permanent" },
   { id: "f-2", name: "Information Design Faculty", title: "Faculty", department: "Information Design", email: "infod.office@nid.edu", room: "Information Design Studio", expertise: ["Data visualization", "Wayfinding"], photoUrl: "/assets/faculty/faculty_3.png", sourceStatus: "Admin maintained", type: "Permanent" },
   { id: "f-3", name: "Digital Game Design Faculty", title: "Faculty", department: "Digital Game Design", email: "dgd.office@nid.edu", room: "Game Lab", expertise: ["Game systems", "Playable media"], photoUrl: "/assets/faculty/faculty_1.png", sourceStatus: "Admin maintained", type: "Permanent" },
