@@ -32,6 +32,7 @@ export default function App() {
     return savedUser ? JSON.parse(savedUser) : null;
   });
   const [loading, setLoading] = useState(Boolean(localStorage.getItem("nid-token")));
+  const [loadingError, setLoadingError] = useState("");
 
   useEffect(() => {
     async function loadUser() {
@@ -43,6 +44,7 @@ export default function App() {
         localStorage.removeItem("nid-token");
         localStorage.removeItem("nid-user");
         setUser(null);
+        setLoadingError("Your previous session expired. Please sign in again.");
       } finally {
         setLoading(false);
       }
@@ -72,6 +74,10 @@ export default function App() {
 
   if (loading) {
     return <div className="loading-screen">Loading NID Campus Portal...</div>;
+  }
+
+  if (loadingError && !user && window.location.pathname !== "/login") {
+    return <Navigate to="/login" replace />;
   }
 
   return (
